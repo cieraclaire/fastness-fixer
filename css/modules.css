@@ -209,10 +209,6 @@ svg.img-flex {
   width: 100%;
 }
 
-.media {
-  overflow: hidden;
-}
-
 .media-img, .media__img {
   float: left;
 }
@@ -228,14 +224,6 @@ svg.img-flex {
 .media-body, .media__body {
   overflow: hidden;
   min-width: 12em; /* Slightly less than 200px, responsiveness built in */
-}
-
-.icon {
-  display: inline-block;
-  position: relative;
-  background: transparent none no-repeat center center;
-  background-size: contain;
-  vertical-align: middle;
 }
 
 .i-16, .i--16 {
@@ -1168,34 +1156,6 @@ a:focus, [tabindex="0"]:focus {
   page-break-inside: avoid;
 }
 
-@media print {
-
-  /* stylelint-disable declaration-no-important */
-
-  .no-print {
-    display: none !important;
-    visibility: hidden !important;
-  }
-
-  .print-only,
-  .force-print {
-    display: block !important;
-    visibility: visible !important;
-  }
-
-  /* stylelint-enable */
-
-  .visually-hidden.force-print {
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    padding: 0;
-    position: static;
-    width: auto;
-    border: 0;
-    clip: initial;
-    clip-path: none;
-  }
 
   /*
    * (c) Fabien Sa || MIT License
