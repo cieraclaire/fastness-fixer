@@ -33,7 +33,7 @@ h2 {
   text-shadow: .1em .1em .3em rgba(0, 0, 0, .6);
 }
 
-.ad-wrap {
+.wrap {
   margin-left: auto;
   margin-right: auto;
   padding: 10px 0;
@@ -42,9 +42,15 @@ h2 {
 
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #ccc;
+
+  display: block;
+  height: 240px;
+  width: 320px;
+
+  border: 0;
 }
 
-.ad-wrap::before {
+.wrap::before {
   content: "Advertisement";
   left: 50%;
   padding: 0 .5em;
@@ -58,12 +64,4 @@ h2 {
   font-size: .5rem;
   text-transform: uppercase;
   font-family: sans-serif;
-}
-
-.ad {
-  display: block;
-  height: 240px;
-  width: 320px;
-
-  border: 0;
 }
